@@ -1,11 +1,30 @@
 aid: spoon-university
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spoon-university.png
 name: Spoon University
-description: Spoon University is a company surfaced as a portfolio company of techstars, uncork-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Spoon University is a food and lifestyle content platform for the next generation of college
+  students, publishing recipes, food news, restaurant reviews, cooking how-tos, and campus dining
+  coverage across hundreds of university chapters. It is owned and operated by Her Campus Media, LLC
+  (Boston, MA), the media company behind Her Campus, College Fashionista, InfluenceHer Collective,
+  and Generation Hired. Surfaced as a portfolio company of Techstars and Uncork Capital and added to
+  the API Evangelist network for enrichment. As of this pass Spoon University publishes no public
+  developer API, developer portal, or API documentation — it is a consumer content brand, not an API
+  provider — so this profile carries identity and domain-security signal only.
 url: https://raw.githubusercontent.com/api-evangelist/spoon-university/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-owner: Her Campus Media, LLC
 x-backed-by:
 - techstars
 - uncork-capital
@@ -13,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Food
+- Content
+- Media
+- Lifestyle
+- College
+- Recipes
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spoon-university-domain-security.yml
 - type: Website
   url: https://spoonuniversity.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
